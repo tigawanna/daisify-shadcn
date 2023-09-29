@@ -1,0 +1,51 @@
+{
+  "name": "daisify-shadcn",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "tailwind plugin for using shadcn with daisy-ui",
+  "engines": {
+    "node": ">=17.x",
+    "npm": ">=8.x <9"
+  },
+  "author": {
+    "name": "tigawanna",
+    "url": "https://twitter.com/tigawanna_"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigawanna/daisify-shadcn"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsup src/index.ts --watch",
+    "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
+    "release": "release-it"
+  },
+  "keywords": [
+    "shadcn/ui",
+    "tailwind",
+    "typescript",
+    "tailwind-plugin",
+    "fan-edition",
+    "shadcn-fe-tw",
+    "daisy ui"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "release-it": "^15.11.0",
+    "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.X"
+  },
+  "dependencies": {
+    "tsup": "^7.0.0"
+  }
+}
