@@ -10,7 +10,7 @@ dependencies:
     version: 3.3.3
   tsup:
     specifier: ^7.0.0
-    version: 7.2.0(typescript@5.2.2)
+    version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
 
 devDependencies:
   release-it:
@@ -1660,8 +1660,8 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /ip@1.1.8:
-    resolution: {integrity: sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==}
+  /ip@1.1.9:
+    resolution: {integrity: sha512-cyRxvOEpNHNtchU3Ln9KC/auJgup87llfQpQ+t5ghoC/UhL16SWzbueiCsdTnWmqAWl7LadfuwhlqmtOaqMHdQ==}
     dev: true
 
   /ip@2.0.0:
@@ -2350,7 +2350,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       degenerator: 4.0.4
-      ip: 1.1.8
+      ip: 1.1.9
       netmask: 2.0.2
     dev: true
 
@@ -2451,22 +2451,6 @@ packages:
     dependencies:
       camelcase-css: 2.0.1
       postcss: 8.4.31
-    dev: false
-
-  /postcss-load-config@4.0.1:
-    resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
-    engines: {node: '>= 14'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.1.0
-      yaml: 2.3.2
     dev: false
 
   /postcss-load-config@4.0.1(postcss@8.4.31):
@@ -3112,7 +3096,7 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
-  /tsup@7.2.0(typescript@5.2.2):
+  /tsup@7.2.0(postcss@8.4.31)(typescript@5.2.2):
     resolution: {integrity: sha512-vDHlczXbgUvY3rWvqFEbSqmC1L7woozbzngMqTtL2PGBODTtWlRwGDDawhvWzr5c1QjKe4OAKqJGfE1xeXUvtQ==}
     engines: {node: '>=16.14'}
     hasBin: true
@@ -3136,7 +3120,8 @@ packages:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.1
+      postcss: 8.4.31
+      postcss-load-config: 4.0.1(postcss@8.4.31)
       resolve-from: 5.0.0
       rollup: 3.29.4
       source-map: 0.8.0-beta.0
