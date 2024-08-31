@@ -17,8 +17,11 @@ const defaultCofig: Partial<Config> = {
                 border: "var(--border)",
                 input: "var(--input)",
                 ring: "var(--ring)",
-                background: "var(--background)",
-                foreground: "var(--foreground)",
+                background: "oklch(var(--b1))",
+                foreground: "oklch(var(--bc))",
+                "primary-foreground":"var(--primary-foreground)",
+                "secondary-foreground": "var(--secondary-foreground)",
+                "accent-foreground": "var(--accent-foreground)",
 
                 destructive: {
                     DEFAULT: "var(--destructive)",
